@@ -1,8 +1,16 @@
 .contenedor {
     background-color: pink;
     border: 2px solid #000;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    grid-auto-flow: column;
+    gap: 50px;
+    justify-content: center;
+    padding: 15px;
 }
 
 .item {
     border: 3px solid aqua;
+    font-size: 4rem;
 }
