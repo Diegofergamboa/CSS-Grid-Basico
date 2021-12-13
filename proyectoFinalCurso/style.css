@@ -14,3 +14,12 @@ main {
     margin: 0 auto;
 }
 
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-image {
+    width: 100%;
+    object-fit: contain;
+}
