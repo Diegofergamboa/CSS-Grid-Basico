@@ -6,6 +6,12 @@
 .contenedor {
     background-color: tan;
     border: 5px black solid;
+    height: 700px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    place-content: center;
 }
 
 .item {
@@ -14,15 +20,18 @@
     font-size: 4rem;
 }
 .item-1 {
-    
+    background-color: rgb(190, 205, 50);
+    color: transparent;
 }
 .item-2 {
-    
+    grid-column: 2 / 4;
+    background-color: rgb(131, 182, 12);
+    color: transparent;
 }
 .item-3 {
-    
+    grid-area: 2 / 2 / 2 /3 ;
 }
-.item-4 {
+/* .item-4 {
     
 }
 .item-5 {
@@ -39,4 +48,4 @@
 }
 .item-9 {
     
-}
+} */
