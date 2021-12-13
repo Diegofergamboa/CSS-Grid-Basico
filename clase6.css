@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contenedor {
+    background-color: tan;
+    border: 5px black solid;
+}
+
+.item {
+
+}
