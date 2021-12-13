@@ -9,5 +9,6 @@
 }
 
 .item {
-
+    border: 2px solid grey;
+    font-size: 4rem;
 }
