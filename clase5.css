@@ -1,14 +1,24 @@
 .contenedor {
-    background-color: #e1bee7;
-    border: 2px solid #000;
-    height: 600px;
+    background-color: #fff;
+    border: 5px solid #e1bee7;
     display: grid;
-    grid-template-columns: 150px 150px;
-    grid-auto-rows: 150px;
-    gap: 15px;
-    place-items: end;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    place-content: center;
 }
 .item {
-    border: 3px solid #00bcd4;
     font-size: 4rem;
+}
+
+.item-1 {
+    border: 5px solid #f8bbd0;
+    background-color: #ffeeff;
+}
+.item-2 {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ffff;
+}
+.item-3 {
+    border: 5px solid #b2ebf2;
+    background-color: #e5ffff;
 }
