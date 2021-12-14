@@ -1,11 +1,12 @@
 .contenedor {
     border: 3px solid #e1bee7;
     background-color: #fff1ff;
-    display: grid;
-    grid-template-rows: 100px 200px;
-    grid-auto-columns: 100px;
-    grid-auto-flow: column;
-    gap: 40px;
+    display: grid; 
+    gap: 10px; 
+    align-content: center; 
+    height: 800px; 
+    grid-template-columns: minmax(50px, 100px) minmax(100px, auto); 
+    grid-auto-rows: 50px;
 }
 
 .item {
