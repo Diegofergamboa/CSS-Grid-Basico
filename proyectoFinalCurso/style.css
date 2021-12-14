@@ -129,6 +129,7 @@ main {
     .hero {
         grid-template-columns: minmax(300px, 500px);
         justify-content: center;
+        margin-top: 150px;
     }
 
     .hero-image {
@@ -136,5 +137,9 @@ main {
     }
     .dishes-grid {
         grid-template-columns: repeat(auto-fit, minmax(75px, 100px));
+        justify-content: center;
+    }
+    .dishes-grid {
+        grid-template-columns: repeat(autofit, minmax(50px, 150px));
     }
 }
