@@ -64,10 +64,11 @@ main {
 
 .dishes {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, minmax(150px, 200px));
+    justify-content: center;
     grid-auto-rows: 1fr;
-    margin-top: 100px;
-    gap: 30px;
+    margin: 100px 0;
+    gap: 25px;
 }
 
 .dishes-item {
