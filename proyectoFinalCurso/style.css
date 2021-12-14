@@ -59,3 +59,23 @@ main {
     font-weight: bolder;
     padding: 12px 24px;
 }
+
+/* Segunda section */
+
+.dishes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+    margin-top: 100px;
+    gap: 30px;
+}
+
+.dishes-item {
+    width: 100% ;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dishes-item_big {
+    grid-area: 1 / 1 / 3 / 3;
+}
