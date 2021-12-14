@@ -76,7 +76,7 @@ main {
 
 .dishes-grid {
     display: grid;
-    grid-template-columns: repeat(4, minmax(150px, 200px));
+    grid-template-columns: repeat(4, minmax(75px, 200px));
     justify-content: center;
     grid-auto-rows: 1fr;
     gap: 25px;
@@ -127,10 +127,14 @@ main {
 /* Responsive */
 @media screen and (max-width : 768px) {
     .hero {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(300px, 500px);
+        justify-content: center;
     }
 
     .hero-image {
         display: none;
+    }
+    .dishes-grid {
+        grid-template-columns: repeat(auto-fit, minmax(75px, 100px));
     }
 }
