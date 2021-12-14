@@ -16,7 +16,7 @@ main {
 
 .hero {
     display: grid;
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: minmax(300px, 2fr) 3fr;
     grid-auto-rows: 400px;
     margin-top: 100px;
     border-bottom: 1px solid grey;
@@ -122,3 +122,15 @@ main {
     margin-bottom: 50px;
 }
 
+
+
+/* Responsive */
+@media screen and (max-width : 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        display: none;
+    }
+}
