@@ -107,15 +107,18 @@ main {
 
 .menu-grid {
     display: grid;
+    gap: 25px;
     justify-content: center;
     grid-template-columns: repeat(5, minmax(100px, 350px));
     justify-content: space-between;
 }
-
-.menu-grid-items img {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
-    margin: 50px;
-    
+section .menu .menu-grid .menu-grid-items {
+    background-color: coral;
+    padding: 15px;
+    border-top-left-radius: 40px;
+}
+section .menu .menu-grid .menu-grid-items {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
