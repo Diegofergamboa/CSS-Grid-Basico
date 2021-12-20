@@ -11,4 +11,6 @@
 .item {
     border: 2px solid #00bcd4;
     font-size: 3rem;
+    width: 250px;
+    height: 250px;
 }
