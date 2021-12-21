@@ -2,6 +2,10 @@
     border: 3px solid #e1bee7;
     background-color: #fff1ff;
     display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-auto-rows: auto;
+    gap: 50px;
+    place-content: center;
 }
 
 .item {
@@ -9,4 +13,5 @@
     font-size: 3rem;
     width: 250px;
     height: 250px;
+    margin: 10px;
 }
