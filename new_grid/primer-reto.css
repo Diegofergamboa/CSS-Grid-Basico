@@ -1,0 +1,9 @@
+.container {
+    display: grid;
+    grid-auto-columns: repeat(2 , 210px);
+    
+}
+
+.item {
+    border: 1px solid red;
+}
