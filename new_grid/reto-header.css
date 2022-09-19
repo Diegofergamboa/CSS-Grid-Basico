@@ -1,92 +1,22 @@
-body {
-    min-height: 100vh;
+header {
     display: grid;
-    font-size: 62.5%;
+    grid-template-columns: minmax(130px, 150px) 1fr;
+    align-content: center;
+    border: 3px solid #000;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(52, 15, 52);
 }
 
-.container {
-    /* Position and Box Model */
-    display: grid;
-    overflow: hidden;
-    /* Visual Details */
-    border-radius: 2%;
-    border: 2px solid #000000;
-    grid-template-areas: 
-        "header header header"
-        "aside main main"
-        "aside main main"
-        "aside main main"
-        "aside main main"
-        "footer footer footer"
-    ;
-}
-
-a {
-    cursor: pointer;
-}
-
-.header {
-    /* Position and Box Model */
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-area: header;
-    /* Visual Details */
-    min-height: 30%;
-    height: 35%;
-    background-color: #aa9999;
-    border-radius: inherit;
-    padding: 16px;
-    border: 1px solid #000000;
-}
-
-h1 {
-    text-align: center;
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-
-a {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.header a > img {
-    width: 25%;
-    border-radius: 50%;
-}
-
-.image-container {
-    margin-left: 16px;
-}
-
-.button-container {
-    display: inline-block ;
-    text-align: end;
+header a img {
+    width: 130px;
     margin: 16px;
-    top: 15%;
+    border-radius: 50%;
+    border: 3px solid brown;
 }
 
-.header a > button {
-    cursor: pointer;
-    width: 120px;
-    height: 50px;
-    border-radius: 10%;
-} 
-
-.aside {
-    grid-area: aside;
-    background-color: whitesmoke;
-    border: 1px solid #000000;
-}
-
-.main {
-    grid-area: main;
-    background-color: burlywood;
-    border: 1px solid #000000;
-}
-
-.footer {
-    grid-area: footer;
-    background-color: #2c2424;
-    border: 1px solid #000000;
+header a {
+    display: block;
+    margin: 16px;
+    text-align: end;
 }
