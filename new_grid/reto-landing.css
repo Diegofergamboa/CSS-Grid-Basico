@@ -3,8 +3,6 @@ body {
     display: grid;
 }
 
-
-
 .container {
     /* Position and Box Model */
     display: grid;
@@ -13,7 +11,9 @@ body {
     border-radius: 2%;
     border: 2px solid #000000;
     box-shadow: 5px 10px;
+    overflow: hidden;
 }
+
 a {
     cursor: pointer;
 }
@@ -24,6 +24,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
     /* Visual Details */
     min-height: 30%;
+    height: 35%;
     background-color: #aa9999;
     border-radius: inherit;
     padding: 16px;
@@ -31,7 +32,10 @@ a {
 
 h1 {
     text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
 }
+
 a {
     display: inline-block;
     vertical-align: middle;
@@ -51,6 +55,7 @@ a {
     text-align: end;
     margin: 16px;
     position: relative;
+    top: 15%;
 }
 
 .header a > button {
