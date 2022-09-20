@@ -1,3 +1,58 @@
-h1 {
-    background-color: rebeccapurple;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
+.header-container {
+    display: grid;
+    /* Para que la sección de la derecha tenga un poquito más de espacio */
+    /* No es necesario que sea justamente 1fr y 2fr, también la proporción pueden ser numeros mayores */
+    grid-template-columns: 2fr 3fr;
+    /* Para que todos los rows que vayan saliendo sean de 350px máximo */
+    grid-auto-rows: 350px;
+    /* Para que el contenedor crezca por rows (esto tiene un set inicial de row de por sí, es redundancia) */
+    grid-auto-flow: row;
+    gap: 16px;
+    padding: 16px;
+    place-items: center;
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+    border-radius: 10px;
+}   
+
+@media (max-width: 768px) {
+    .header-container {
+        grid-template-columns: 1fr;
+        place-items: center;
+    }
+}
+
+.aside-container {
+    display: grid;
+    gap: 16px;
+    margin: 16px;
+    place-self: center;
+    text-align: center;
+}
+
+.aside-container__button {
+    width: 140px;
+    max-width: 140px;
+    height: 30px;
+    max-height: 30px;
+    place-self: center;
+}
+
+
+.header__img {
+    /* Object fit para que ocupe solamente el valor que el contenido le dé */
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    max-width: 420px;
+    border-radius: 50px;
+}
+
